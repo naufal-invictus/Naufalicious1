@@ -7,6 +7,7 @@ document.onreadystatechange = function() {
     } else { 
         document.querySelector( 
         "#loader").style.display = "none"; 
+        
         document.querySelector( 
         "body").style.visibility = "visible"; 
     } 
@@ -15,15 +16,22 @@ document.onreadystatechange = function() {
 document.getElementById('showLeft').addEventListener('click', function() {
     document.querySelector('.left-content').style.display = 'block';
     document.querySelector('.right-content').style.display = 'none';
+    document.querySelector('.left').style.display = 'none';
+    document.querySelector('.right').style.display = 'none';
+    
 });
 
 document.getElementById('showRight').addEventListener('click', function() {
     document.querySelector('.left-content').style.display = 'none';
     document.querySelector('.right-content').style.display = 'block';
+    document.querySelector('.left').style.display = 'none';
+    document.querySelector('.right').style.display = 'none';
 });
 document.getElementById('exit').addEventListener('click', function() {
     document.querySelector('.left-content').style.display = 'none';
     document.querySelector('.right-content').style.display = 'none';
+    document.querySelector('.left').style.display = '';
+    document.querySelector('.right').style.display = '';
 });
 
 prompt ("Bukan bermaksud membenci pengguna Android, tetapi fitur web saya di Android masih dalam tahap pengembangan (saya terlalu malas untuk memperbaikinya).")

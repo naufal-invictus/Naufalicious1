@@ -9,6 +9,20 @@
    
 
     }
+    .andro{
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+        justify-content: space-between;
+        margin-top: -5px;
+    }
+    .andro img{
+        border: 5px solid black;
+
+        width: 150px;
+        height: 280px;
+    }
+
     .scp {
         align-items: center;
     }
@@ -215,6 +229,14 @@
     .scp {
         float:left;
         margin-right: 20px;
+    }
+    .andro {display: flex;
+    flex-direction: row;justify-content: space-evenly;}
+
+    .andro img{
+
+        width: 200px;
+        height: 350px;
     }
     #loader { 
         border: 12px solid #f3f3f3; 
