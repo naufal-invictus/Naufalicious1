@@ -37,30 +37,39 @@
         margin: 0px; 
     } 
     div.gallery {
-        display: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
 
       }
       
 
       
       div.gallery .img1 {
-        display: none;
+        width: 80px;
+        margin: 10px;
+        height: 120px;
 
       }
       div.gallery .img2 {
+        width: 80px;
+        margin: 10px;
+        height: 120px;
 
-        display: none;
       }
       
       div.desc {
 
-        display: none;
+       font-size: auto;
 
       }
-      .Meme {        
-
-
-        display: none;
+      .Meme {  
+        align-items: center;      
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: left;
+        justify-content: space-around;
        
     }
     .container {
